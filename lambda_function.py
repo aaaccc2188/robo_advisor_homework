@@ -43,7 +43,7 @@ def validate_data(age, investmentAmount, intent_request):
                 "You should be less than 65 years old to use this service, "
                 "please provide a different age.",
             )
-        if age < 0:
+        if age <= 0:
             return build_validation_result(
                 False,
                 "age",
